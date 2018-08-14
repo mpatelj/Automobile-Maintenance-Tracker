@@ -1,0 +1,62 @@
+<!-- Modal: addOrderModal -->
+<div class="modal fade right" id="addOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
+data-backdrop="false">
+    <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <p class="heading lead">Add Service Order</p>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">×</span>
+                </button>
+            </div>
+            
+            <!--Body-->
+            <div class="modal-body">
+                <!-- Form -->
+                <!-- ko with: newCarData()[0] -->
+                <form style="color: #757575;">
+                    <label>Type</label>
+                    <select class="browser-default custom-select mb-4" data-bind="options: $root.list, optionsValue: 'type', value: $root.selectedType"></select>
+
+                    <label>Make</label>
+                    <select class="browser-default custom-select mb-4" data-bind="options: $root.makeList, optionsValue: 'make', value: $root.selectedMake"></select>
+                    
+                    <label>Model</label>
+                    <select class="browser-default custom-select mb-4" data-bind="options: $root.modelList, value: $root.selectedModel"></select>
+
+                    <label>Year</label>
+                    <select class="browser-default custom-select mb-4" data-bind="options: $root.yearOptions, value: year"></select>
+
+                    <div class="form-group">
+                        <label for="OdometerInput">Odometer</label>
+                        <input type="number" min="1" class="form-control" id="OdometerInput" placeholder="Enter Kilometers" data-bind="textInput: odometer">
+                    </div>
+
+                    <div class="form-group">
+                        <!-- Material checked -->
+                        <label>Maintenance</label>
+                        <div data-bind="foreach: $root.maintenanceList">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" data-bind="value: $data, checked: $parent.maintenance, attr: { 'id' : 'maintenanceChecked' + $index() }">
+                                <label class="form-check-label" data-bind="text: $data, attr: { 'for' : 'maintenanceChecked' + $index() }"></label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- /ko -->
+                <!-- Form -->
+            </div>
+            
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+                <a type="button" class="btn btn-primary waves-effect waves-light" data-dismiss="modal" data-bind="click: addOrder, visible: isNewOrder()">Add</a>
+                <a type="button" class="btn btn-primary waves-effect waves-light" data-dismiss="modal" data-bind="click: updateOrder, visible: !isNewOrder()">Save</a>
+                <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal" data-bind="click: revertData">Cancel</a>
+            </div>
+			<!--Footer-->
+        </div>
+    </div>
+</div>
+<!-- Modal: addOrderModal -->

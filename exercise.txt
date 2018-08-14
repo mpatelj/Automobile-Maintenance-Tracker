@@ -1,0 +1,17 @@
+PROGRAMMING PROBLEM:  Automobile Maintenance Tracker
+
+ 
+
+Create a simple object-oriented library for tracking automobile maintenance. The system should support at least three car types: electric, gas and diesel. Each vehicle should have at minimum a make, model, year and odometer reading. Maintenance tasks should include 2-3 things like oil changes or tire rotations. However, not all maintenance tasks can be applied to all vehicles (an electric car won’t need an oil change).
+
+ 
+
+Your library or API should be capable of listing, adding, updating and removing entries at run time. Supply automated unit tests to demonstrate your features.
+
+ 
+
+Demonstrate usage using a web interface. You must also demonstrate your knowledge of how javascript can be used to provide functionality in the UI.
+
+ 
+
+This problem is evaluated based on the design of your library and how usable it would be to others.
