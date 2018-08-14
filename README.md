@@ -2,9 +2,9 @@
 
 Automobile Maintenance Tracker is a maintenance tracker.
 
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
+  - Supports three car types: Electric, Gas and Diesel. 
+  - Each vehicle has at minimum a make, model, year and odometer reading. 
+  - Maintenance tasks should include 2-3 things like oil changes or tire rotations. However, not all maintenance tasks can be applied to all vehicles (an electric car won’t need an oil change).
 
 # Tracker supports CRUD (Create, Read, Update and Delete)!
 
