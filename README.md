@@ -29,6 +29,8 @@ And of course Automobile Maintenance Tracker itself is open source with a [publi
 
 ### Installation
 
-Run index.php file in the root directory.
+Download knockoutJS and UnderscoreJS library files
 
-The main source code is in js/tracker.js
+Import the source code file into your project i.e js/tracker.js
+
+Run index.php file in the root directory
