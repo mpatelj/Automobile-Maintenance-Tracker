@@ -1,37 +1,36 @@
 # Automobile Maintenance Tracker
 
-Automobile Maintenance Tracker is a maintenance tracker.
+The Automobile Maintenance Tracker is a tool for keeping track of maintenance tasks for different types of vehicles.
 
-  - Uses KnockoutJS framework
-  - Supports three car types: Electric, Gas and Diesel. 
-  - Each vehicle has at minimum a make, model, year and odometer reading. 
-  - Maintenance tasks should include 2-3 things like oil changes or tire rotations. However, not all maintenance tasks can be applied to all vehicles (an electric car won’t need an oil change).
+## Features
 
-# Tracker supports CRUD (Create, Read, Update and Delete)!
+- **Supported Vehicle Types:** Electric, Gas, and Diesel.
+- **Essential Vehicle Information:** Each vehicle must include make, model, year, and odometer reading.
+- **Maintenance Tasks:** Includes tasks such as oil changes and tire rotations. Note that not all tasks apply to all vehicle types (e.g., electric cars do not require oil changes).
+- **CRUD Operations:** 
+  - Create new service orders with automatic data addition to the table.
+  - Read and view service orders with instant updates.
+  - Update existing service orders.
+  - Delete service orders as needed.
 
-  - Create new service orders and the data is added automatically to the table
-  - Changes made to the service orders are displayed instantly
-  - Update exisiting service orders
-  - Delete existing service orders
+## Technology
 
+The Automobile Maintenance Tracker leverages the following libraries and frameworks:
 
-### Tech
+- **[Bootstrap]** - Front-end component library for responsive design.
+- **[MDBootstrap]** - Material Design for Bootstrap to enhance UI/UX.
+- **[KnockoutJS]** - JavaScript framework for MVVM (Model-View-ViewModel) architecture.
+- **[UnderscoreJS]** - JavaScript library for data manipulation.
+- **[jQuery]** - Library for DOM manipulation and event handling.
 
-Automobile Maintenance Tracker uses various libraries for data manipulation and designing user interface:
+## Installation
 
-* [Bootstrap] -  Front-end component library
-* [MDBootsrap] - Material Design for Bootstrap to design UI
-* [KnockoutJS] - Javascript Framework (MVVM)
-* [UnderscoreJS] - Javascript data manipulation
-* [jQuery] - To control DOM elements and trigger functions based on events
+1. **Set Up a Local Server:**
+   - Install a local server environment like [XAMPP](https://www.apachefriends.org/index.html), [MAMP](https://www.mamp.info/en/), or [WampServer](http://www.wampserver.com/en/) to run PHP and Apache on your local machine.
 
-And of course Automobile Maintenance Tracker itself is open source with a [public repository][dill]
- on GitHub.
+2. **Clone the repository**
+   - Copy/clone the project files into the `htdocs` directory of XAMPP (or the equivalent directory for MAMP/WampServer).
 
-### Installation
-
-Download knockoutJS and UnderscoreJS library files
-
-Import the source code file into your project i.e js/tracker.js
-
-Run index.php file in the root directory
+5. **Run the Application:**
+   - Start the Apache server using your local server application.
+   - Access the application by navigating to `http://localhost/your-project-folder/` in your web browser.
