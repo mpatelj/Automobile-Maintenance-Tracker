@@ -65,7 +65,7 @@ function AutomobileTrackerManager(){
     };
 
 	// Year list options for select input
-    self.yearOptions = _.range(2005, 2019);
+    self.yearOptions = _.range(2005, 2024);
 	
 	// Maintenance tasks list options for select input
     self.maintenanceList = ko.observableArray([
