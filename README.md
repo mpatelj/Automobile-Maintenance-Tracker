@@ -17,11 +17,12 @@ The Automobile Maintenance Tracker is a tool for keeping track of maintenance ta
 
 The Automobile Maintenance Tracker leverages the following libraries and frameworks:
 
-- **[Bootstrap]** - Front-end component library for responsive design.
-- **[MDBootstrap]** - Material Design for Bootstrap to enhance UI/UX.
 - **[KnockoutJS]** - JavaScript framework for MVVM (Model-View-ViewModel) architecture.
-- **[UnderscoreJS]** - JavaScript library for data manipulation.
+- **[PHP]** - To setup foundation and routing within the app.
+- **[MDBootstrap]** - Material Design for Bootstrap to enhance UI/UX.
+- **[Bootstrap]** - Front-end component library for responsive design.
 - **[jQuery]** - Library for DOM manipulation and event handling.
+- **[UnderscoreJS]** - JavaScript library for data manipulation.
 
 ## Installation
 
